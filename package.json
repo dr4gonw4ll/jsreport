@@ -43,7 +43,7 @@
     "jsreport-base": "2.0.2",
     "jsreport-browser-client": "2.2.2",
     "jsreport-child-templates": "1.4.0",
-    "jsreport-chrome-pdf": "1.9.0",
+    "jsreport-chrome-pdf": "1.10.0",
     "jsreport-cli": "2.2.5",
     "jsreport-core": "2.10.0",
     "jsreport-data": "2.4.0",
