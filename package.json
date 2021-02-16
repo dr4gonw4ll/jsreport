@@ -36,7 +36,7 @@
     "entryPoint": "server.js"
   },
   "dependencies": {
-    "handlebars": "4.7.6",
+    "handlebars": "4.7.7",
     "jsreport-assets": "1.7.0",
     "jsreport-authentication": "2.6.0",
     "jsreport-authorization": "2.4.0",
