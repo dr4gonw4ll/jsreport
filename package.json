@@ -36,29 +36,29 @@
     "entryPoint": "server.js"
   },
   "dependencies": {
-    "handlebars": "4.7.6",
-    "jsreport-assets": "1.7.0",
+    "handlebars": "4.7.7",
+    "jsreport-assets": "1.7.1",
     "jsreport-authentication": "2.6.0",
     "jsreport-authorization": "2.4.0",
     "jsreport-base": "2.0.2",
     "jsreport-browser-client": "2.2.2",
     "jsreport-child-templates": "1.4.0",
-    "jsreport-chrome-pdf": "1.9.0",
+    "jsreport-chrome-pdf": "1.10.0",
     "jsreport-cli": "2.2.5",
     "jsreport-core": "2.10.0",
     "jsreport-data": "2.4.0",
     "jsreport-debug": "2.1.3",
-    "jsreport-docx": "2.8.0",
+    "jsreport-docx": "2.10.1",
     "jsreport-express": "2.8.0",
     "jsreport-freeze": "2.0.0",
     "jsreport-fs-store": "2.9.0",
     "jsreport-handlebars": "2.1.0",
-    "jsreport-html-to-xlsx": "2.8.0",
+    "jsreport-html-to-xlsx": "2.8.5",
     "jsreport-import-export": "2.1.0",
     "jsreport-jsrender": "2.1.1",
     "jsreport-licensing": "2.2.3",
     "jsreport-pdf-utils": "1.9.0",
-    "jsreport-pptx": "0.7.0",
+    "jsreport-pptx": "0.7.5",
     "jsreport-public-templates": "2.2.0",
     "jsreport-reports": "2.5.0",
     "jsreport-resources": "2.1.0",
@@ -76,7 +76,8 @@
     "mkdirp": "0.5.5",
     "node.extend.without.arrays": "1.1.6",
     "puppeteer": "2.0.0",
-    "semver": "6.3.0"
+    "semver": "6.3.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "archiver": "3.0.0",
@@ -96,7 +97,9 @@
   "scripts": {
     "test": "mocha test --timeout 35000 && standard",
     "compile": "node compile.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": ">=8.9"
@@ -108,5 +111,6 @@
     "index.js",
     "config.md",
     "example.server.js"
-  ]
+  ],
+  "snyk": true
 }
