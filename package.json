@@ -76,7 +76,7 @@
     "mkdirp": "0.5.5",
     "node.extend.without.arrays": "1.1.6",
     "puppeteer": "2.0.0",
-    "semver": "6.3.0"
+    "semver": "7.5.2"
   },
   "devDependencies": {
     "archiver": "3.0.0",
